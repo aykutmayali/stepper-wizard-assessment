@@ -11,43 +11,35 @@ import Review from './components/Review'
 import Confirmation from './components/Confirmation'
 
 class App extends Component {
-	constructor(props) {
-		super(props)
 
-		this.state = {
-			firstName: "",
-			lastName: "",
-			email: "",
-			phone: "",
-			streetOne: "",
-			streetTwo: "",
-			city: "",
-			state: "",
-			zipcode: "",
-			commentType: "",
-			commentText: "",
-			isModalOpen: false,
-			component: ''
-		}
-
-		this.handleChange = this.handleChange.bind(this)
-		this.handleClick = this.handleClick.bind(this)
-		this.showModal = this.showModal.bind(this)
-		this.onCloseModal = this.onCloseModal.bind(this)
+	state = {
+		firstName: "",
+		lastName: "",
+		email: "",
+		phone: "",
+		streetOne: "",
+		streetTwo: "",
+		city: "",
+		state: "",
+		zipcode: "",
+		commentType: "",
+		commentText: "",
+		isModalOpen: false,
+		component: ''
 	}
 
-	handleChange(e) {
+	handleChange = e => {
 		const { name, value } = e.target
 		this.setState({
 			[name]: value
 		})
 	}
 
-	handleClick(data) { 
+	handleClick = data => { 
 		localStorage.setItem('wizardData', JSON.stringify(data))
 	}
 
-	showModal(component) {
+	showModal = component => {
 		this.setState(prevState => {
 			return ({
 				isModalOpen: !prevState.isModalOpen,
@@ -56,7 +48,7 @@ class App extends Component {
 		})
 	}
 
-	onCloseModal() {
+	onCloseModal = () => {
 		this.setState({
 			isModalOpen: false
 		})
