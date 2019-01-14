@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Confirmation = () => {
+export default () => {
 	return(
 		<div className="container" >
 			<h2>Your response has been saved! Thanks!</h2>
@@ -8,5 +8,3 @@ const Confirmation = () => {
 		</div>
 	)
 }
-
-export default Confirmation

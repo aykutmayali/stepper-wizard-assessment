@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ContactForm = props => {
+export default props => {
 	const data = props.contactData
 
 	return (
@@ -28,5 +28,3 @@ const ContactForm = props => {
 		</div>
 	)
 }
-
-export default ContactForm

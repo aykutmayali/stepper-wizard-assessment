@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AddressForm = props => {
+export default props => {
 	const data = props.addressData
 
 	return (
@@ -32,5 +32,3 @@ const AddressForm = props => {
 		</div>
 	)
 }
-
-export default AddressForm

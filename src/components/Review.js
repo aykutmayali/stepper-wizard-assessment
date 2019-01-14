@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Review = props => {
+export default props => {
 	const data = props.allData
 
 	//grabbing the save button to use in calling the handleClick function and to be able to save data in the LocalStorage
@@ -35,5 +35,3 @@ const Review = props => {
 		</div>
 	)
 }
-
-export default Review

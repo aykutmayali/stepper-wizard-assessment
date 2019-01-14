@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CommentForm = props => {
+export default props => {
 	const data = props.commmentData
 
 	return (
@@ -25,5 +25,3 @@ const CommentForm = props => {
 		</div>
 	)
 }
-
-export default CommentForm
